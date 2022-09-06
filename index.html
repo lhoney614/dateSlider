@@ -5,19 +5,14 @@
         <!--ПОДРЕДАКТИРОВАТЬ НАЗВАНИЕ-->
         <title>Дата</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link 
-            rel="stylesheet" 
-            type="text/css" 
-            href="http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic"
-        > 
         <!--handheld - телефон-->
     </head>
     <body>
         <div class = "main">
             <div class="date-change">
-                <span class = "text">
+                <p class = "text">
                     Временной промежуток:
-                </span>
+                </p>
                 <!--Ввод от пользователя двух дат временного промежутка-->
                 <div class="input-position">
                     <input type="date" name="first-date" class="date-input"> 
@@ -39,7 +34,12 @@
                         Месяца
                     </button>
                 </div>
-                <div class = "slider" id="date-slider"></div>
+                <div class="slider-box">
+                    <div class = "slider" id="slider">
+                        <div class="thumb" id="thumb-first"></div>
+                        <div class="thumb" id="thumb-second"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
