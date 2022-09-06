@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--ПОДРЕДАКТИРОВАТЬ НАЗВАНИЕ-->
+        <title>Дата</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link 
+            rel="stylesheet" 
+            type="text/css" 
+            href="http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic"
+        > 
+        <!--handheld - телефон-->
+    </head>
+    <body>
+        <div class = "main">
+            <div class="date-change">
+                <span class = "text">
+                    Временной промежуток:
+                </span>
+                <!--Ввод от пользователя двух дат временного промежутка-->
+                <div class="input-position">
+                    <input type="date" name="first-date" class="date-input"> 
+                    <span class = "text">&ndash;</span>
+                    <input type="date" name="second-date" class="date-input">
+                </div>
+            </div>
+            <div class="scale-type">
+                <p class = "text">
+                    Вид шкалы:
+                </p>
+            </div>
+            <div class="date-scale">
+                <div class="button-position">
+                    <button class = "button-style" id="year">
+                        Года
+                    </button>
+                    <button class = "button-style" id="month">
+                        Месяца
+                    </button>
+                </div>
+                <div class = "slider" id="date-slider"></div>
+            </div>
+        </div>
+    </body>
+</html>
